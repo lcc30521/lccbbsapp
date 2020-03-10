@@ -1,0 +1,55 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}
+	   
+        ,{
+            "path" : "pages/tabBar/message/message",
+            "style" : {
+				"navigationBarTitleText": "消息"
+			}
+        }
+        ,{
+            "path" : "pages/tabBar/user/user",
+            "style" : {
+				"navigationBarTitleText": "我的"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#333333",
+		"selectedColor":"f06c7a",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"pagePath":"pages/tabBar/home/home",
+				"iconPath":"static/home.png",   //正常显示的图标
+				"selectedIconPath":"static/homeactive.png",   //选中
+				"text":"首页"   //显示文本
+			},
+			{
+				"pagePath":"pages/tabBar/message/message",
+				"iconPath":"static/mes.png",   //正常显示的图标
+				"selectedIconPath":"static/mess.png",   //选中
+				"text":"消息"   //显示文本
+			},
+			{
+				"pagePath":"pages/tabBar/user/user",
+				"iconPath":"static/user.png",   //正常显示的图标
+				"selectedIconPath":"static/useractive.png",   //选中
+				"text":"我的"   //显示文本
+			}
+		]
+	}
+}

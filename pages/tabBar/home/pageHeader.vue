@@ -1,4 +1,5 @@
 <template>
+	<view>
 	<view class="header">    
 		<!--logo view 相当于div标签-->
 		 <view class="addr">
@@ -19,7 +20,8 @@
 			
 		</view>
 	</view>
-	
+	<view class="place"></view>
+	</view>
 </template>
 
 <script>

@@ -8663,6 +8663,99 @@ function normalizeComponent (
 }
 
 
+/***/ }),
+/* 15 */
+/*!*******************************************************************!*\
+  !*** C:/Users/12553/Desktop/uniapp_bbs/uniapp_bbs/utils/https.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {module.exports = function (param) {
+  var url = param.url;
+  var method = param.method;
+  var header = param.header || {};
+  var data = param.data || {};
+
+  //请求方式
+  if (method) {
+    method = method.toUpperCase(); //转大写
+    if (method == "post") {
+      header = { "content-type": "application/x-www-form-urlencoded" };
+    }
+    //发起请求  加载
+    if (!param.HideLoading) {
+      uni.showLoading({ "title": "加载中..." });
+    }
+
+
+    //发起网络请求
+    uni.request({
+      url: url,
+      header: header,
+      method: method || "GET",
+      data: data,
+      success: function success(res) {
+        if (res.statusCode != 200) {
+          uni.showModal({
+            content: res.msg });
+
+          return;
+        }
+        //return
+        typeof param.success == "function" && param.success(res.data);
+
+      },
+      fail: function fail(e) {
+        uni.showModal({
+          content: e.meg });
+
+        //return
+        typeof param.fail == "function" && param.fail(e.data);
+      },
+      complete: function complete() {
+        console.log("请求成功");
+        uni.hideLoading();
+        //return
+        typeof param.complete == "function" && param.complete(res.data);
+        return;
+      } });
+
+
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */
+/*!************************************************************************!*\
+  !*** C:/Users/12553/Desktop/uniapp_bbs/uniapp_bbs/utils/interfaces.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var domain = "";
+var interfaces = {
+  //获取所有话题列表
+  getTopics: domain + "api/topics" };
+
+module.exports = interfaces;
+
 /***/ })
 ]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

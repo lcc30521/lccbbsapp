@@ -1,11 +1,14 @@
 <template>
-	<view>
-		
-	</view>
+	<pageHeader/>
 </template>
 
 <script>
+	import pageHeader from './pageHeader.vue'
+	
 	export default {
+		components:{
+			pageHeader
+		},
 		data() {
 			return {
 				

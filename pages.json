@@ -3,27 +3,46 @@
 		{
 			"path": "pages/tabBar/home/home",
 			"style": {
-				"navigationBarTitleText": "首页"
+				"navigationBarTitleText": "首页",
+				"app-plus":{
+					"titleNView":false,
+					"bounce":"none"   //回弹效果
+				}
 			}
 		}
 	   
         ,{
             "path" : "pages/tabBar/message/message",
             "style" : {
-				"navigationBarTitleText": "消息"
+				"navigationBarTitleText": "消息",
+				"app-plus":{
+					"titleNView":false,
+					"bounce":"none"   //回弹效果
+				}
+				
+				
 			}
         }
         ,{
             "path" : "pages/tabBar/user/user",
             "style" : {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "我的",
+				"app-plus":{
+					"titleNView":false,
+					"bounce":"none"   //回弹效果
+				}
 			}
+        }
+       
+        ,{
+            "path" : "pages/tabBar/home/pageHeader",
+            "style" : {}
         }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#F8F8F8"
 	},
 	"tabBar":{

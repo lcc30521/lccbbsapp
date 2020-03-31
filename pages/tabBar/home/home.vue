@@ -30,7 +30,7 @@
 				关注南通
 			</view>
 		</view>
-		<view class="category">
+		<view class="category" @tap="gotoCategory(1)">
 			<view class="img">
 				<image src="../../../static/cat/1223844.png" mode=""></image>
 			</view>
@@ -38,7 +38,7 @@
 				闲聊杂谈
 			</view>
 		</view>
-		<view class="category">
+		<view class="category" @tap="gotoCategory(1)">
 			<view class="img">
 				<image src="../../../static/cat/1239700.png" mode=""></image>
 			</view>
@@ -46,7 +46,7 @@
 				招聘求职
 			</view>
 		</view>
-		<view class="category">
+		<view class="category" @tap="gotoCategory(1)">
 			<view class="img">
 				<image src="../../../static/cat/1239704.png" mode=""></image>
 			</view>
@@ -56,35 +56,48 @@
 		</view>
 	</view>
 	<!--论坛分类-->
+	<!--tab切换-->
+	  <!--  <view style="width:92%;margin:0 4%;height:43px;;">
+			
+	         
+		</view> -->
+	<!--tab切换-->
+	<!--list-->
+	
+	<view style="width:92%;margin:0 4%;margin-top:4upx;margin-bottom:12upx;">
+		<!-- 使用组件并绑定ref, 动态绑定height属性 -->
+	     <lcclist/>
+	</view>
+	<!--list-->
 	</view>
 </template>
 
 <script>
 	import pageHeader from './pageHeader.vue'
-	import interfaces from '../../../utils/interfaces.js'
+
+	import lcclist from './topiclist.vue'
+	
+	
+	
+
 	export default {
 		components:{
-			pageHeader
+			pageHeader,
+		
+			lcclist
+		
 		},
-		onLoad(){
-			this.initData();
+	
+		onReady() {
+			
 		},
 		data() {
 			return {
 				
+				
 			}
 		},
-		methods: {
-			initData(){
-				uni.request({    //因为已经把httpsjs挂载到了vue的 request
-					url:interfaces.getTopics,
-					success:(res)=>{
-						console.log(res);
-					}
-				})
-			}
-		
-		}
+	
 	}
 </script>
 
@@ -150,5 +163,22 @@
 		   }
 	   }
 	   
+   }
+   .content {
+   	width: 100%;
+   }
+   .topView{
+   	height: 44px;
+   	display: flex;
+   	flex-direction: row;
+   	justify-content: space-between;
+   	align-items: center;
+   	font-size:  18px;
+   	padding: var(--status-bar-height) 20px 0 20px;
+   }
+   .topViewItem{
+   	font-size: 16px;
+   	color: #999;
+   	width: 15%;
    }
 </style>

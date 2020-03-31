@@ -174,7 +174,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 42:
+/***/ 43:
 /*!**********************************************************************************************************!*\
   !*** C:/Users/12553/Desktop/uniapp_bbs/uniapp_bbs/main.js?{"page":"pages%2FtabBar%2Fhome%2FpageHeader"} ***!
   \**********************************************************************************************************/
@@ -191,5 +191,5 @@ createPage(_pageHeader.default);
 
 /***/ })
 
-},[[42,"common/runtime","common/vendor"]]]);
+},[[43,"common/runtime","common/vendor"]]]);
 //# sourceMappingURL=../../../../.sourcemap/mp-weixin/pages/tabBar/home/pageHeader.js.map

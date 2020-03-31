@@ -1,2 +1,2 @@
 #lccbbsapp
-![](README_files/1.png)
+![](README_files/2.jpg)

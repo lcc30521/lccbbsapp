@@ -1,0 +1,1 @@
+<view class="test-component _div"><hm-news-detail vue-id="1" options="{{options}}" bind:__l="__l"></hm-news-detail></view>

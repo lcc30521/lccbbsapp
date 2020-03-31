@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "hm-news-detail": "/pages/topic/index"
+  }
+}

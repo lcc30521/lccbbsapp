@@ -38,7 +38,7 @@
 		 height: 100upx;
 		 display: flex;
 		 align-items: center;
-		 position: fixed;
+		/* position: fixed; */
 		 z-index: 11;
 		 background-color: #FFFFFF;
 		 top: 0;
@@ -109,7 +109,7 @@
 	}
 	.place{
 		background-color: #ffffff;
-		height: 100upx;
+		/* height: 100upx; */
 		/*#ifdef APP-PLUS*/
 		top: var(--status-bar-height);
 		/*#endif*/

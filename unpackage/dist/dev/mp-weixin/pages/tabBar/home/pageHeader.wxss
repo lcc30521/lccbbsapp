@@ -34,7 +34,7 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  position: fixed;
+  /* position: fixed; */
   z-index: 11;
   background-color: #FFFFFF;
   top: 0;
@@ -123,6 +123,6 @@
 }
 .place {
   background-color: #ffffff;
-  height: 100rpx;
+  /* height: 100upx; */
 }
 

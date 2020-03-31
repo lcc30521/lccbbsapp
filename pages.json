@@ -37,7 +37,12 @@
         ,{
             "path" : "pages/tabBar/home/pageHeader",
             "style" : {}
-        }
+        },
+		{
+		    "path" : "pages/topic/topicshow",
+			"navigationBarTitleText": "话题详情",
+		    "style" : {}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

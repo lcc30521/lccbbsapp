@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
-    "page-header": "/pages/tabBar/home/pageHeader"
+    "page-header": "/pages/tabBar/home/pageHeader",
+    "lcclist": "/pages/tabBar/home/topiclist"
   }
 }
